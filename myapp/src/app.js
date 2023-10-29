@@ -6,6 +6,7 @@ import './index.css';
 import {Routes,Route} from 'react-router-dom';
 import TrainList from './component/TrainList';
 import UpdateTrain from './component/UpdateTrain';
+import TrainSearch from './component/TrainSearch';
 function App(){
     return(<div className="bg">
         <BrowserRouter>
@@ -13,6 +14,7 @@ function App(){
             <Route path="/addtrain" element={<AddTrain/>}/> 
             <Route path="/trainlist" element={<TrainList/>}/> 
             <Route path="/update/:trainNumber" element={<UpdateTrain />} />
+            <Route path="/trainsearch" element={<TrainSearch/>}/> 
             </Routes>
         </BrowserRouter>
         </div>
