@@ -1,0 +1,27 @@
+[INFO ] 25-10-2023 11:14:50.180 am [http-nio-9091-exec-7]  com.bookingservice.service.BookingServiceImpl - Cancelling user booking with PNR: 12231
+[WARN ] 25-10-2023 11:14:50.394 am [http-nio-9091-exec-7]  com.bookingservice.service.BookingServiceImpl - Booking details not found for cancellation with PNR: 12231
+[INFO ] 25-10-2023 11:14:50.400 am [http-nio-9091-exec-7]  c.b.e.CustomizedResponseEntityExceptionHandler - Not Found Exception
+[INFO ] 25-10-2023 05:13:47.499 pm [http-nio-9091-exec-3]  c.b.e.CustomizedResponseEntityExceptionHandler - Validation Fail
+[INFO ] 25-10-2023 05:15:02.990 pm [http-nio-9091-exec-6]  c.b.e.CustomizedResponseEntityExceptionHandler - Validation Fail
+[INFO ] 25-10-2023 05:18:13.484 pm [http-nio-9091-exec-1]  com.bookingservice.service.BookingServiceImpl - Adding user booking details.
+[INFO ] 25-10-2023 05:18:14.828 pm [http-nio-9091-exec-1]  c.b.e.CustomizedResponseEntityExceptionHandler - 404 : "{"timestamp":"2023-10-25","message":"Train with train number 102938 not found!!","details":"uri=/admin/search/102938","httpCodeMessage":"Not Found"}"
+[INFO ] 25-10-2023 05:21:56.381 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - Adding user booking details.
+[INFO ] 25-10-2023 05:21:56.678 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - User booking details added successfully.
+[INFO ] 25-10-2023 05:21:57.248 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - Passenger details added successfully.
+[INFO ] 25-10-2023 05:21:57.455 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - Train seats updated in train service successfully.
+[INFO ] 25-10-2023 05:23:06.514 pm [http-nio-9091-exec-4]  com.bookingservice.service.BookingServiceImpl - Cancelling user booking with PNR: 9419470770
+[INFO ] 25-10-2023 05:23:06.795 pm [http-nio-9091-exec-4]  com.bookingservice.service.BookingServiceImpl - User booking with PNR 9419470770 cancelled successfully.
+[INFO ] 25-10-2023 06:57:39.125 pm [http-nio-8082-exec-9]  com.trainservice.service.TrainServiceImpl - Adding a new train with train number: 12345
+[INFO ] 25-10-2023 06:57:39.508 pm [http-nio-8082-exec-9]  com.trainservice.service.TrainServiceImpl - Saving the new train with train number: 12345
+[INFO ] 25-10-2023 06:59:00.586 pm [http-nio-8082-exec-8]  com.trainservice.service.TrainServiceImpl - Finding trains between stations Kochi and Goa on date: 2023-10-25T00:00:00.000+0530
+[INFO ] 25-10-2023 07:03:40.534 pm [http-nio-8082-exec-2]  com.trainservice.service.TrainServiceImpl - Finding trains between stations Kochi and Goa on date: 2023-10-25T00:00:00.000+0530
+[INFO ] 26-10-2023 03:29:21.378 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - Getting booking details for user: Anirudh
+[INFO ] 26-10-2023 03:29:21.736 pm [http-nio-9091-exec-2]  com.bookingservice.service.BookingServiceImpl - Retrieved 1 booking details for user: Anirudh
+[INFO ] 26-10-2023 03:30:18.624 pm [http-nio-9091-exec-3]  com.bookingservice.service.BookingServiceImpl - Getting booking details for user: David
+[INFO ] 26-10-2023 03:30:18.646 pm [http-nio-9091-exec-3]  c.b.e.CustomizedResponseEntityExceptionHandler - No enum constant com.bookingservice.enums.BookingClass.AC
+[INFO ] 26-10-2023 03:31:36.220 pm [http-nio-9091-exec-6]  com.bookingservice.service.BookingServiceImpl - Getting booking details for user: Anirudh
+[INFO ] 26-10-2023 03:31:36.241 pm [http-nio-9091-exec-6]  com.bookingservice.service.BookingServiceImpl - Retrieved 1 booking details for user: Anirudh
+[INFO ] 26-10-2023 03:32:10.958 pm [http-nio-9091-exec-7]  com.bookingservice.service.BookingServiceImpl - Getting booking details for user: Xavier
+[INFO ] 26-10-2023 03:32:10.968 pm [http-nio-9091-exec-7]  c.b.e.CustomizedResponseEntityExceptionHandler - No enum constant com.bookingservice.enums.BookingClass.AC
+[INFO ] 26-10-2023 03:33:01.823 pm [http-nio-9091-exec-10]  com.bookingservice.service.BookingServiceImpl - Getting booking details for user: VarunAshrit
+[INFO ] 26-10-2023 03:33:01.898 pm [http-nio-9091-exec-10]  com.bookingservice.service.BookingServiceImpl - Retrieved 8 booking details for user: VarunAshrit
