@@ -175,5 +175,20 @@ public class BookingServiceImpl implements  BookingService {
         log.info("User booking with PNR {} cancelled successfully.", pnrNo);
         return "Your booking ticket with PNR Number : " + pnrNo + " is cancelled. Your payment amount will be credited to your account within 5 to 7 days..!!!";
     }
+
+	@Override
+	public List<Passenger> getPassengerDetailsByPnr(long pnrNo) throws BookingDetailsNotFoundException {
+		 log.info("Getting booking details for PNR: {}", pnrNo);
+	        Optional<BookingDetails> byPnrNo = bookingRepository.findByPnrNo(pnrNo);
+	        if (byPnrNo.isEmpty()) {
+	            log.warn("Booking details not found for PNR: {}", pnrNo);
+	            throw new BookingDetailsNotFoundException("BookingDetails with given " + pnrNo + " not found!!");
+	        }
+	        BookingDetails bookingDetails = byPnrNo.get();
+	        List<Passenger> listbyPnrNo = passengerRepository.findByPnrNo(pnrNo);
+	        bookingDetails.setPassengers(listbyPnrNo);
+	        log.info("Retrieved booking details for PNR: {}", pnrNo);
+		return  listbyPnrNo;
+	}
 }
 

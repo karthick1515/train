@@ -26,7 +26,7 @@ const TrainList = () => {
                 .then(response => {
                     console.log(response.data); 
                     alert("Deleted Successfully");
-                    setTrains(prevTrains => prevTrains.filter(train => train.trainNumber !== trainNumber));
+                    window.location.reload();
                 })
                 .catch(error => {
                     console.error('Error deleting train:', error); 
@@ -38,7 +38,7 @@ const TrainList = () => {
     const handleSearchChange = (event) => {
         setSearchQuery(event.target.value);
     };
-
+    
     const filteredTrains = trains.filter(train => {
         return train.trainNumber.toString().includes(searchQuery);
     });
@@ -52,6 +52,7 @@ const TrainList = () => {
                 value={searchQuery}
                 onChange={handleSearchChange}
             />
+           
             <table>
                 <thead>
                     <tr>

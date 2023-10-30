@@ -50,7 +50,10 @@ const newformatDate = (dateString) => {
  
     setSearchResults(filteredTrains);
   };
- 
+  const handleViewalltrain = () => {
+    window.location.reload();
+  };
+
   return (
 <div>
 <h2>All Train Details</h2>
@@ -79,7 +82,9 @@ const newformatDate = (dateString) => {
         />
 </div>
 <button onClick={handleSearch}>Search</button>
- 
+<br></br>
+<button onClick={handleViewalltrain}>View all trains</button>
+<br></br>
 <table>
                 <thead>
                     <tr>

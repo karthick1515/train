@@ -8,6 +8,10 @@ import TrainList from './component/TrainList';
 import UpdateTrain from './component/UpdateTrain';
 import TrainSearch from './component/TrainSearch';
 import BookingForm from './component/BookingForm';
+import BookingList from './component/BookingList';
+import ViewBookings from './component/ViewBookings';
+import ViewPassengerDetails from './component/ViewPassengerDetails';
+import ViewPassengerDetailsByUser from './component/ViewPassengerDetailsByUser';
 function App(){
     return(<div className="bg">
         <BrowserRouter>
@@ -16,7 +20,12 @@ function App(){
             <Route path="/trainlist" element={<TrainList/>}/> 
             <Route path="/update/:trainNumber" element={<UpdateTrain />} />
             <Route path="/trainsearch" element={<TrainSearch/>}/> 
-            <Route path="/trainbooking" element={<BookingForm/>}/> 
+            <Route path="/trainbooking" element={<BookingForm/>}/>
+            <Route path="/trainbookinglist" element={<BookingList/>}/> 
+            <Route path="/viewbookings" element={<ViewBookings/>}/> 
+            <Route path="/passengerdetails/:pnrNo" element={<ViewPassengerDetails/>} />
+            <Route path="/passengerdetailsbyuser/:pnrNo" element={<ViewPassengerDetailsByUser/>} />
+            
             </Routes>
         </BrowserRouter>
         </div>

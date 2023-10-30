@@ -63,6 +63,7 @@ const BookingForm = () => {
     console.log(userDetails);
     axios.post('http://localhost:8084/user/book', userDetails)
       .then((response) => {
+        alert("Booking Successful!!!");
         console.log('Booking successful!', response.data);
         // Handle successful booking response here (if needed)
       })
